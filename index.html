@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/themes/default.css" rel="stylesheet" />
+    <title>Editor</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="editor">
+        <div class="editor__header">
+          <div class="editor__header__presentation">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.75 18.25H16.25M6 22H18C20.2091 22 22 20.2091 22 18V6C22 3.79086 20.2091 2 18 2H6C3.79086 2 2 3.79086 2 6V18C2 20.2091 3.79086 22 6 22Z"
+                stroke="white"
+                stroke-linecap="round"
+                stroke-width="1.5"
+              />
+            </svg>
+            <h4 class="editor__header__presentation__title">Terminal</h4>
+          </div>
+          <div class="editor__header__copy">
+            <svg
+              fill="none"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                stroke="white"
+                stroke-linecap="round"
+                stroke-width="2"
+                x1="11"
+                x2="13"
+                y1="3"
+                y2="3"
+              />
+              <path
+                clip-rule="evenodd"
+                d="M7.76634 3.38149C7.58482 3.14123 7.30113 3 7 3V3C5.89543 3 5 3.89543 5 5V20C5 21.1046 5.89543 22 7 22H17C18.1046 22 19 21.1046 19 20V5C19 3.89543 18.1046 3 17 3V3C16.6989 3 16.4152 3.14123 16.2337 3.38149L14.9034 5.14228C14.7144 5.39243 14.419 5.53947 14.1055 5.53947H9.89451C9.58098 5.53947 9.28561 5.39243 9.09662 5.14228L7.76634 3.38149Z"
+                fill="white"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="editor__content lang-bash">
+          <ul class="editor__content__count">
+            <li class="editor__content__line">
+              <span class="editor__content__line__style">$</span>
+              <pre
+                class="editor__content__line__code language-shell"
+              ><code> npm install vue-cli</code></pre>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="prism.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
